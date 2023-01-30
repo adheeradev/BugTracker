@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Workspace\\Playground\\BugTracker\\BugTrackerTests\\BugTrackerTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Workspace\\Playground\\BugTracker\\BugTrackerTests\\BugTrackerTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\Playground\\BugTracker\\BugTrackerTests\\BugTrackerTests.csproj",
+        "projectName": "BugTrackerTests",
+        "projectPath": "C:\\Workspace\\Playground\\BugTracker\\BugTrackerTests\\BugTrackerTests.csproj",
+        "packagesPath": "C:\\Users\\murali.pushpakaran\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\Playground\\BugTracker\\BugTrackerTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\murali.pushpakaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/findel-pub/api/v3/index.json": {},
+          "https://www.myget.org/F/findel/auth/7dbdb3ba-7551-4f6a-b95e-af3f475c4935/api/v3/index.json": {},
+          "https://www.myget.org/F/framework-core/auth/7dbdb3ba-7551-4f6a-b95e-af3f475c4935/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\BugTracker.csproj": {
+                "projectPath": "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\BugTracker.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\BugTracker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\BugTracker.csproj",
+        "projectName": "BugTracker",
+        "projectPath": "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\BugTracker.csproj",
+        "packagesPath": "C:\\Users\\murali.pushpakaran\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\Playground\\BugTracker\\BugTracker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\murali.pushpakaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/findel-pub/api/v3/index.json": {},
+          "https://www.myget.org/F/findel/auth/7dbdb3ba-7551-4f6a-b95e-af3f475c4935/api/v3/index.json": {},
+          "https://www.myget.org/F/framework-core/auth/7dbdb3ba-7551-4f6a-b95e-af3f475c4935/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "066e2845-f21d-4b11-823b-307240e8cb33": {
+      "ProjectGuid": "066e2845-f21d-4b11-823b-307240e8cb33",
+      "DisplayName": "BugTracker",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "fbc6f88d-c957-418f-909d-e7c5386c89ef": {
+      "ProjectGuid": "fbc6f88d-c957-418f-909d-e7c5386c89ef",
+      "DisplayName": "BugTrackerTests",
+      "ColorIndex": 1
+    },
+    "ecedf0ea-f57b-4393-b8e9-f466a16130c7": {
+      "ProjectGuid": "ecedf0ea-f57b-4393-b8e9-f466a16130c7",
+      "DisplayName": "BugTrackerTests",
+      "ColorIndex": 2
+    },
+    "b07900ed-7cf2-452f-ade9-b3e65c7ff70d": {
+      "ProjectGuid": "b07900ed-7cf2-452f-ade9-b3e65c7ff70d",
+      "DisplayName": "BugTrackerTests",
+      "ColorIndex": 3
+    },
+    "14e73039-1dc6-48f3-a355-152d65f05776": {
+      "ProjectGuid": "14e73039-1dc6-48f3-a355-152d65f05776",
+      "DisplayName": "BugTracker.API",
+      "ColorIndex": 4
+    },
+    "2bda4fa3-e8eb-47c2-89fe-e44e32991cf6": {
+      "ProjectGuid": "2bda4fa3-e8eb-47c2-89fe-e44e32991cf6",
+      "DisplayName": "BugTracker.WebApp",
+      "ColorIndex": 5
+    },
+    "893ece8a-8e70-408e-ad6b-5d0aad6432eb": {
+      "ProjectGuid": "893ece8a-8e70-408e-ad6b-5d0aad6432eb",
+      "DisplayName": "BugTracker.Web",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

@@ -1,0 +1,14 @@
+Notes - Bug Tracker
+
+Tables
+BackLog
+User
+WorkFlowStatus
+
+Why you have added response, why not return just the data
+Why do we have async?
+
+
+Disable SSL certification
+
+Create new bug - will throw error if validation issue- rendering the same page

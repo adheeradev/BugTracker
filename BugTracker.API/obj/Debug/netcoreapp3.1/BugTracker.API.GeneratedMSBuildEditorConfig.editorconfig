@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = BugTracker.API
+build_property.ProjectDir = C:\Workspace\Playground\BugTracker\BugTracker.API\
