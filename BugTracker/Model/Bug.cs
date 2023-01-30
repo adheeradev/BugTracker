@@ -12,7 +12,5 @@ namespace BugTracker.Model
         public int? AssignedToUserId { get; set; }  
         public int? StatusId { get; set; }
         public DateTime? OpenedDate { get; set; }
-        public string Status { get; set; }
-        public string AssignedToUserName { get; set; }
     }
 }
