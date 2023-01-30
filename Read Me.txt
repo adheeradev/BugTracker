@@ -1,7 +1,67 @@
-Notes - Bug Tracker
+Bug Tracker
 
-Tables
-BackLog
+Database
+
+The Bug Tracker consits of three tables in BugTrackerDB.mdf file
+Bug 
 User
 WorkFlowStatus
 
+From the requirements analysis it was obivous that I needed a bug model class to hold all the bug details from title, description
+, statusId, AssignedToUserId and OpenedDate, which is also converted into bug table in DB.
+
+I created a master table for holiding status data and user data, which is referenced as foreign key in Bug table, so that 
+I can establish and enforce a link between the data between tables to control what data can be stored.
+
+To hold all the above mentioned table data, I have created model classes.
+
+I have also created store procs to get, insert and update data.
+Note - The Get_All_Bugs Store proc has status joined from workflowstatus table just incase if we are going to display
+status against title in future.
+
+Data Service
+I have created a data service layer for having a clean organised structure. I have written three interfaces for each 
+of the table to perform CRUD operations. The reason for interface is the contract that the implemnentation class
+has to obey and for future purpose. I have used dapper to fire SQL queries against the database and get the result mapped to 
+domain classes.
+
+The reason for having request and response objects is having additional wrapper to add properties such as 
+whether the operation is success and also can have message or error properties to let the calling code to display the
+errors or messages instead of just throwing the exception.
+
+Note - I could have implemented bit more validation by checking request data and throwing exception or message to user,
+which I could have done if more time is avaialble.
+
+Business Service
+Again, I have created business service layer for any business related logics and also gives a clean structure.
+At the moment I don't have any business logic in this layer, it is just a pass through to data service layer.
+
+BugTracker API
+I have used .net core 3.1 API project, as you could see from the controllers it is self explanatory that each controller 
+is responsbile for each end point in the API application.
+
+BugTracker.Web
+I have taken a desicion to use MVC web app for my front end. As it gives a nice template to bind your models to front end.
+I'm using HttpClient to GET, POST and PUT requests to BugTracker API end points for my front end.
+
+The difficulty was my knowlwedge on csHtml and how to bind with model properties. But, once I did a couple of csHtml I got the feel 
+for it and have implemented the same for Bug and User controller.
+
+How to build and run
+
+Once you have downloaded the project. You would need to change the connection string in BugTracker.API project by going to appSettings.json file.
+You have to build the soultion.
+Run the BugTracker.API project first and then fire the BugTracker.Web, which should land on Bugs page.
+
+
+Known Issues
+No validations has been implemented. 
+I could have implemented required field and custom validations. Especially, when we selected open status we should force
+the user to select the Opened date. Also, once we have a date and bring up the bug again we should make it readonly.
+
+There might be cases of application crashing as I have not have to handle the erros properly. For example, fetching a bug with unknownId would crash the applciation. If I had the time, I would 
+implement try catch blocks to handle this situation.
+
+Unit tests
+I started writting unit tests for my class libarary as I was implementing business service class and I intended to write the same for my dataservice classes too, but unfortunately 
+due to time constraint I was limited to only few unit test where I have verified the calls to data service and few other data checks using Moq library
